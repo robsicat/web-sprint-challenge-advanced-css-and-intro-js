@@ -261,17 +261,7 @@ function get20s(arr){
 console.log(get20s(artists));
 
 
-/*
-function filterByWord(arr, string){
-    const newArr = [];
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i].includes(string)){
-            newArr.push(arr[i]);
-        }
-    }
-    return newArr;
-}
-*/
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -282,9 +272,12 @@ function filterByWord(arr, string){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(arr, num){
+   arr.slice[num];
 }
+
+removeArtist(artists, 0);
+return artists.length;
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -303,9 +296,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr){
+  let myBio = [
+    {
+      id: 20,
+      name: 'Rob Sicat',
+      years: '1981 - May 2, 2021',
+      genre: 'Web Design',
+      nationality: 'Filipino',
+      bio: 'PM. Designer + now Coder.'
+    }
+  ]
   }
+
+  return addArtist(artists);
+  console.log(addArtist(artists));
 
   
 
@@ -316,9 +321,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(arr){
+  for(let i = 0; i < arr.length; i++){
+    if(arr.paintings > 100){
+      return arr.name;
+    }
+  }
 }
+  
+
+
 
 
 
